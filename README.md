@@ -2,6 +2,7 @@
 
 `metatop` is a RESTful application for showing ps4 top games using [metacritic](http://www.metacritic.com/game/playstation-4) as a source of data
 
+
 ## Dependencies and Requirements
 
 * Python >= 2.7 (`tox` information below)
