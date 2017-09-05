@@ -1,6 +1,6 @@
 ## About
 
-`metatop` is a project for parsing [metacritic](http://www.metacritic.com/game/playstation-4) top 
+`metatop` is a project for parsing [metacritic](http://www.metacritic.com/game/playstation-4) games top 
 
 ## Dependencies and Requirements
 
@@ -29,8 +29,9 @@ python app.py
 Web application will be available on http://127.0.0.1:5000/
 
 ## TODO
+- Add command line parameters
 - Optimising search in array
 - Documentation of code
-- Unit Tests for module
-- Unit Tests for web app
+- Unit Tests for pymetacritic
+- Unit Tests for Flask app
 - Implement for all tops on [metacritic](http://www.metacritic.com/)
