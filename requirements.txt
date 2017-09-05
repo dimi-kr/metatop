@@ -1,3 +1,7 @@
 flask-restful==0.3.6
 requests==2.18.3
 beautifulsoup4==4.6.0
+nose2==0.6.5
+unittest2==1.1.0
+cov-core==1.15.0
+tox==2.8.1
