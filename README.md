@@ -1,14 +1,18 @@
 ## About
 
-`metatop` is a project for parsing [metacritic](http://www.metacritic.com/game/playstation-4) games top 
+`metatop` is a RESTful application for showing ps4 top games using [metacritic](http://www.metacritic.com/game/playstation-4) as a source of data
+
 
 ## Dependencies and Requirements
 
-- Python 2.7
-- pip
+* Python >= 2.7 (`tox` information below)
+* pip
 
+### Python libraries
 [flask-restful](http://flask-restful.readthedocs.io)
+
 [requests](http://docs.python-requests.org/en/master/)
+
 [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)
 
 ## Installation
@@ -19,19 +23,35 @@ $ pip install -r requirements.txt
 
 ### Run tests
 
+```bash
+$ nose2 -C -v
+```
+### Testing on different environments
+```bash
+$ tox
+```
 
+`tox` default environments are: `py3`, `py35`, `py37`, `py27`. So should be available in a system. 
 
 ## Run
 
 ```bash
-python app.py
+python run.py
 ```
-Web application will be available on http://127.0.0.1:5000/
+Web application will be available on [http://127.0.0.1:5000/](http://127.0.0.1:5000/) (dev mode)
+
+## Limitations
+
+The app should run in production with handling concurrent requests on WSGI server side only
 
 ## TODO
-- Add command line parameters
-- Optimising search in array
-- Documentation of code
-- Unit Tests for pymetacritic
-- Unit Tests for Flask app
-- Implement for all tops on [metacritic](http://www.metacritic.com/)
+* ~~Requests tune~~
+* ~~HTTP codes REST~~
+* ~~Documentation of code~~
+* ~~Unit Tests for module~~
+* Unit Tests for web app
+* Test Coverage
+* Cache 
+* Optimising search in array for huge TOPs
+* Implement for all TOPs on [metacritic](http://www.metacritic.com/)
+* Dockerfile and server configuration files
