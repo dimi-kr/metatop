@@ -7,15 +7,9 @@ Todo:
     * Configuration (host/port/debug)
 """
 from __future__ import absolute_import
-from flask_restful import Api
-from resources.games import Games
-from flask import Flask
+from metatop import app
 
-app = Flask('metatop')
 # app.config.from_object('config')
-api = Api(app)
-api.add_resource(Games, '/games', '/games/<string:game_title>')
 
 if __name__ == "__main__":
     app.run(debug=False, threaded=True)
-
