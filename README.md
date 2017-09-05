@@ -49,7 +49,7 @@ The app should run in production with handling concurrent requests on WSGI serve
 * ~~HTTP codes REST~~
 * ~~Documentation of code~~
 * ~~Unit Tests for module~~
-* Unit Tests for web app
+* ~~Unit Tests for web app~~
 * Test Coverage
 * Cache 
 * Optimising search in array for huge TOPs

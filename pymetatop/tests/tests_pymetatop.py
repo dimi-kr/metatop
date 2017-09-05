@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-Test for pymetatop
+Tests for pymetatop
 
 """
 import unittest2 as unittest
 
-from metatop.pymetatop.top import MetaTop
+from pymetatop.top import MetaTop
 
 class PyMetaTopTest(unittest.TestCase):
     ''' Test class for pymetatop module '''
