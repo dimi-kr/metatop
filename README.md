@@ -1,6 +1,6 @@
 ## About
 
-`metatop` is a RESTful application for showing ps4 top games using [metacritic](http://www.metacritic.com/game/playstation-4) as a source of data
+`metatop` is REST api application for showing Top Playstation 4 Games (By Metascore) using [metacritic](http://www.metacritic.com/game/playstation-4) as a source of data
 
 
 ## Dependencies and Requirements
